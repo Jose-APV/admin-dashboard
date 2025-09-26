@@ -5,9 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="icon.jpg";
+    <link rel="icon" type="image/x-icon" href="./assets/icons/icon.jpg";
 </head>
 <body>
-    
+    <div class="grid-container">
+        <div class="header">
+            <div class="header-top">
+                <div class="search-section">
+                     <img class="search-icon" src="./assets/icons/magnify.svg" height="20px" width="20px" alt="search-icon">
+                    <input type="text" class="search-bar">
+                </div>
+
+                <i class="notifications-icon"></i>
+                <div class="profile">
+                   <img class="pfp" alt="pfp" src="./assets/images/kawaii-cat.jpg" height="50px" width="50px">
+                    <h2>Steven Chen</h2> 
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="user">
+                    <img class="pfp" alt="pfp" src="./assets/images/kawaii-cat.jpg" height="200px" width="200px">
+                    <div>
+                        <h5>Hi there, </h5>
+                        <h2>Steven Chen (@asukiesteve)</h2>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li class="nav-item"><a href=""><img src="./assets/icons/home.svg" width="16px" height="16px" class="home-icon" ::before></i><span class="text">Home</span></a></li>
+                <li class="nav-item"><a href=""><img src="./assets/icons/card-account-details.svg" class="profile-icon"></i><span class="text">Profile</span></a></li>
+                <li class="nav-item"><a href=""><img src="./assets/icons/message-reply.svg" class="message-icon"></i><span class="text">Messages</span></a></li>
+                <li class="nav-item"><a href=""><img src="./assets/icons/clock-time-three.svg" class="history-icon"></i><span class="text">History</span></a></li>
+                <li class="nav-item"><a href=""><img src="./assets/icons/note-multiple.svg" class="task-icon"></i><span class="text">Tasks</span></a></li>
+                <li class="nav-item"><a href=""><img src="./assets/icons/account-group.svg" class="comm-icon"></i><span class="text">Communities</span></a></li>
+            </ul>
+
+            <ul>
+                <li class="nav-item"><a href=""><img class="setting-icon"></i><span class="text">Settings</span></a></li>
+                <li class="nav-item"><a href=""><img class="support-icon"></i><span class="text">Support</span></a></li>
+                <li class="nav-item"><a href=""><img class="text-icon"></i><span class="text">Privacy</span></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="announcements"></div>
+            <div class="trending"></div>
+        </div>
+    </div>
 </body>
 </html>
