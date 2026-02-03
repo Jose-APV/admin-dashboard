@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('path/to/Roboto-Regular.woff2') format('woff2');
+    src: url('./assets/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -24,26 +24,41 @@ body {
 
 .header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .header-top {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2px;
+    gap: 15px;
 
 }
 .header-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search-section {
     display: flex;
-    gap: 2px;
+    gap: 15px;
     align-items: center;
+}
+.search-icon {
+    padding-left: 30px;
+    
+}
+.icon-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 80px;
 }
 .search-bar {
     border: 1px solid lightgray;
-    width: 400px;
+    width: 800px;
     height: 20px;
     background-color: lightgray;
     border-radius: 15px;
@@ -51,6 +66,26 @@ body {
     grid-column-start: 2;
 }
 
+
+.user-greeting {
+    display: flex;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.action-buttons {
+    display: flex;
+    padding-right: 80px;
+    gap: 30px;
+    
+}
+button {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 35px;
+}
 .profile {
     display: flex;
     gap: 2px;
@@ -64,19 +99,59 @@ a {
     color: white;
     text-decoration: none;
     display: flex;
-    align-items: center;
+}
+.text {
+    font-size: large;
+    font-weight: 700;
+    
 }
 
 .sidebar {
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1 / 2;
     grid-row-start: 1;
     grid-row-end: 5;
     background-color: #1992d4;
+    gap: 30px;
+}
+.dashboard-title {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    
+}
+.nav-item {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   cursor: pointer;
+
+}
+.sidebar-selections { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.dashboard-icon { 
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    fill: currentColor;
+    color: white;
+}
+.sidebar-icons {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    fill: currentColor;
+    color: white;
 }
 
-.home-icon {
-   background-image: url("./assets/icons/home.svg");
-   fill: white;
+
+/* Main */
+
+.main {
+    background-color: #e2e8f0;
 }
