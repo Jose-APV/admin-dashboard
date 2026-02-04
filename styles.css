@@ -7,6 +7,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    overflow-x: hidden; /* optional, prevents horizontal scroll */
+
 }
 
 .pfp {
@@ -15,7 +18,8 @@ body {
 
 .grid-container {
     display: grid;
-    height: 100vh;
+    max-height: 100vh;
+    height: 100vh;      /* exactly viewport height */
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     
@@ -79,7 +83,7 @@ body {
     gap: 30px;
     
 }
-button {
+.header-buttons {
     background-color: #1992d4;
     color: white;
     border: none;
@@ -110,11 +114,11 @@ a {
     color: white;
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1 / 2;
+    /* grid-template-columns: 1 / 2; */
     grid-row-start: 1;
     grid-row-end: 5;
     background-color: #1992d4;
-    gap: 30px;
+    gap: 100px;
 }
 .dashboard-title {
     display: flex;
@@ -133,6 +137,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-left: 25px;
 }
 .dashboard-icon { 
     height: 50px;
@@ -154,4 +159,64 @@ a {
 
 .main {
     background-color: #e2e8f0;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.main-aside {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    /* background-color: pink; */
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    
+    gap: 1.5rem;
+    margin-left: 1.5rem;
+    max-height: 100vh;
+}
+.project {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.buttons {
+    text-align: right;
+}
+.project-buttons {
+    cursor: pointer;
+    border: none;
+    background-color: initial;
+    height: 25px;
+    width: 25px;
+}
+
+.announcements-content, .trending-content { 
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trending-pfp {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.task {
+    color: lightgray;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
 }
